@@ -30,23 +30,16 @@ footer, header, hgroup, menu, nav, section {
 	display: block;}
 
 
-/* MY CODE HERE
-*/
+/* MY CODE HERE */
 
 .masonry-layout {
-	column-count: 3;
-	column-gap: 2em; /* Horizontal spacing between columns */
+	column-count: 2;
+	column-gap: 3em; /* Horizontal spacing between columns */
  }
  
  .masonry-layout .col-4 {
 	break-inside: avoid-column;
-	margin-bottom: 2em; /* Vertical spacing between items */
- }
- 
- @media (max-width: 768px) {
-	.masonry-layout {
-	   column-count: 2;
-	}
+	margin-bottom: 3em; /* Vertical spacing between items */
  }
  
  @media (max-width: 480px) {
