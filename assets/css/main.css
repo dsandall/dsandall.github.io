@@ -29,6 +29,48 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+
+/* MY CODE HERE
+*/
+
+.masonry-layout {
+	column-count: 3;
+	column-gap: 2em; /* Horizontal spacing between columns */
+ }
+ 
+ .masonry-layout .col-4 {
+	break-inside: avoid-column;
+	margin-bottom: 2em; /* Vertical spacing between items */
+ }
+ 
+ @media (max-width: 768px) {
+	.masonry-layout {
+	   column-count: 2;
+	}
+ }
+ 
+ @media (max-width: 480px) {
+	.masonry-layout {
+	   column-count: 1;
+	}
+ }
+
+ #portfolio {
+    background: linear-gradient(to bottom, #171717, #424242); /* Example gradient: replace with your desired colors */
+	color:#242424
+}
+
+#contact {
+	background: #424242
+}
+
+#top {
+	background: #171717
+}
+ 
+
+/* MY CODE DONE */
+
 body {
 	line-height: 1;
 }
@@ -103,7 +145,7 @@ input, select, textarea {
 	body, input, textarea, select {
 		font-family: 'Open Sans', sans-serif;
 		line-height: 1.85em;
-		color: #888;
+		color: #cfcfcf;
 		font-weight: 300;
 		font-size: 13pt;
 	}
@@ -127,7 +169,6 @@ input, select, textarea {
 
 	b, strong {
 		font-weight: 600;
-		color: #3e3e3e;
 	}
 
 	i, em {
@@ -152,9 +193,14 @@ input, select, textarea {
 		font-style: italic;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
-		color: #3e3e3e;
+	h1, h2, h4, h5, h6 {
+		color: #ffffff;
 		margin: 0 0 0.75em 0;
+	}
+
+	h3 {
+		color: #353535;
+
 	}
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
